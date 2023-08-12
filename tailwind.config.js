@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         boxes: 'rgb(3 7 18 / 1)',
         turquoise: 'rgb(16 185 129 / 1)',
+        icons: 'rgb(7 17 44)',
       },
       backgroundImage: {
         violet: 'radial-gradient(circle, rgba(13,6,73,1) 0%, rgba(85,42,214,1) 100%)',

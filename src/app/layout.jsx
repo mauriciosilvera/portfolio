@@ -11,9 +11,7 @@ function RootLayout({ children }) {
         <Header />
         <div className="w-4/5 h-3/5 flex justify-between">
           <ProfileCard data={profileData} />
-          <section className="h-full w-3/5 rounded-xl bg-boxes flex flex-wrap items-center justify-center">
-            {children}
-          </section>
+          {children}
         </div>
       </body>
     </html>

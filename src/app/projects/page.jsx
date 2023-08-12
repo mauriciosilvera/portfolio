@@ -1,16 +1,21 @@
+'use client';
+
 import React from 'react';
-import { proyectos } from '@/constants';
+import { projects } from '@/constants';
+import ProjectCard from '@/components/ProjectCard';
 
 function Projects() {
   return (
-    <>
-      {proyectos.map((project) => (
-        <article className="flex flex-col items-center justify-center w-1/2 h-1/2 list-none">
-          <p className="text-xl font-semibold">{project.name}</p>
-          <img className="h-3/5 w-3/5 mt-2 rounded-xl" src="/profile-light.webp" alt={project.preview} />
-        </article>
+    <section className="h-full w-3/5 rounded-xl bg-boxes flex flex-wrap items-center justify-start flex-col shadow-md shadow-boxes">
+      {projects.map((project) => (
+        <ProjectCard
+          name={project.name}
+          src={project.src}
+          description={project.description}
+          techIcons={project.techUsed}
+        />
       ))}
-    </>
+    </section>
   );
 }
 
