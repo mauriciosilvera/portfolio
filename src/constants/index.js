@@ -1,4 +1,6 @@
-import { HiOutlineHome, HiOutlineCode, HiOutlineMail } from 'react-icons/hi';
+import {
+  HiOutlineHome, HiOutlineCode, HiOutlineMail, HiOutlinePhone,
+} from 'react-icons/hi';
 import {
   DiJavascript1, DiHtml5, DiCss3, DiReact, DiGithubBadge,
 } from 'react-icons/di';
@@ -7,13 +9,28 @@ import {
 } from 'react-icons/bi';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { SiMui, SiFigma, SiStyledcomponents } from 'react-icons/si';
+import { BsPinMap } from 'react-icons/bs';
 
 const profileData = {
   name: 'Mauricio Silvera',
   job: 'Web developer',
-  email: 'mauricioagustinsilvera@gmail.com',
-  phone: '+54 9 1150207579',
-  location: 'Capital Federal, Buenos Aires',
+  aboutMe: [
+    {
+      key: 'Email',
+      value: 'mauricioagustinsilvera@gmail.com',
+      icon: HiOutlineMail,
+    },
+    {
+      key: 'Phone',
+      value: '+54 9 1150207579',
+      icon: HiOutlinePhone,
+    },
+    {
+      key: 'Location',
+      value: 'CABA, Buenos Aires',
+      icon: BsPinMap,
+    },
+  ],
   linkedIn: 'https://www.linkedin.com/in/mauricio-silvera/',
   gitHub: 'https://www.github.com/mauriciosilvera',
   buttonLabel: 'Download CV',

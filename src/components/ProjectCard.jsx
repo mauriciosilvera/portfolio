@@ -29,7 +29,7 @@ function ProjectCard(props) {
     >
       <p className="text-xl lg:text-2xl font-semibold mt-4">{name}</p>
       <div className="w-10/12 mt-3 relative">
-        <img className="rounded-xl object-cover" src={src} alt={src} />
+        <img className="rounded-xl object-cover mb-2" src={src} alt={src} />
         {isHovered && (
           <div className="absolute flex flex-col items-center justify-center rounded-xl top-0 left-0 w-full h-full bg-black/70">
             <ul className="w-4/5 flex items-center justify-center gap-3">

@@ -6,7 +6,7 @@ import ProjectCard from '@/components/ProjectCard';
 
 function Projects() {
   return (
-    <section className="w-11/12 mb-5 sm:w-4/5 rounded-xl bg-boxes flex flex-wrap items-center justify-center flex-col shadow-md shadow-boxes lg:w-11/12 lg:h-4/5 lg:max-h-[80%] lg:flex-row lg:mb-0">
+    <section className="w-11/12 mb-5 sm:w-4/5 rounded-xl bg-boxes flex flex-wrap items-center justify-center flex-col shadow-md shadow-boxes lg:w-11/12  lg:flex-row lg:mb-0">
       {projects.map((project) => (
         <ProjectCard
           name={project.name}
