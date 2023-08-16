@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import './globals.css';
 import { motion } from 'framer-motion';
@@ -28,5 +26,9 @@ function RootLayout({ children }) {
     </html>
   );
 }
+
+export const metadata = {
+  title: 'Mauricio Silvera',
+};
 
 export default RootLayout;
