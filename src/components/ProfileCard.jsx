@@ -9,7 +9,7 @@ import ListItem from './ListItem';
 
 function ProfileCard({ data }) {
   const {
-    name, job, email, phone, linkedIn, gitHub, buttonLabel, location,
+    name, job, email, phone, linkedIn, gitHub, location,
   } = data;
 
   return (
