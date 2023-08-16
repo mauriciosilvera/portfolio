@@ -24,7 +24,7 @@ function Contact() {
       });
   };
 
-  if (!sended) {
+  if (sended) {
     return (
       <section className="w-11/12 mb-5 py-10 rounded-xl dark:bg-boxes flex flex-wrap items-center justify-center flex-col shadow-md shadow-boxes sm:w-4/5 order-3 lg:w-11/12 lg:mb-0 lg:h-4/5">
         <h1 className="text-md p-5 font-semibold text-center lg:text-2xl lg:px-10">
