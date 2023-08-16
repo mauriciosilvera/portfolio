@@ -29,4 +29,8 @@ function RootLayout({ children }) {
   );
 }
 
+export const metadata = {
+  title: 'Mauricio Silvera',
+};
+
 export default RootLayout;
