@@ -55,7 +55,6 @@ function Contact() {
         <Input label={contact.nameLabel} type="text" name={contact.name} />
         <Input label={contact.emailLabel} type="email" name={contact.email} />
         <Input label={contact.messageLabel} type="textArea" name={contact.message} />
-
         <button
           type="submit"
           className="p-4 mb-2 self-center rounded-xl text-lg font-medium dark:bg-turquoise dark:hover:bg-emerald-600"

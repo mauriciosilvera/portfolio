@@ -28,17 +28,17 @@ function ProjectCard(props) {
       onMouseLeave={hideOverlay}
     >
       <p className="text-xl lg:text-2xl font-semibold mt-4">{name}</p>
-      <div className="h-4/5 w-4/5 mt-3 relative">
+      <div className="w-10/12 mt-3 relative">
         <img className="rounded-xl object-cover" src={src} alt={src} />
         {isHovered && (
-        <div className="absolute flex flex-col items-center justify-center rounded-xl top-0 left-0 w-full h-full bg-black/70">
-          <ul className="w-4/5 flex items-center justify-center gap-3">
-            {techIcons.map((tech) => (
-              <tech.icon className="text-6xl p-2 bg-turquoise rounded-full" />
-            ))}
-          </ul>
-          <p className="w-4/5 text-white mt-3">{description}</p>
-        </div>
+          <div className="absolute flex flex-col items-center justify-center rounded-xl top-0 left-0 w-full h-full bg-black/70">
+            <ul className="w-4/5 flex items-center justify-center gap-3">
+              {techIcons.map((tech) => (
+                <tech.icon className="text-4xl p-1 2xl:text-6xl bg-turquoise rounded-full" />
+              ))}
+            </ul>
+            <p className="w-10/12 text-sm xl:text-base text-white text-center mt-3">{description}</p>
+          </div>
         )}
       </div>
 
