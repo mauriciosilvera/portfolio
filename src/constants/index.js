@@ -26,7 +26,7 @@ const projects = [{
   techUsed: [{ icon: DiReact }, { icon: SiStyledcomponents }, { icon: SiMui }],
 },
 {
-  name: 'Iron-man tracker',
+  name: 'SSBU Iron-man tracker',
   src: '/iron-man-tracker.png',
   description: 'Esse exercitation elit deserunt tempor dolor sint amet irure eiusmod non sint commodo irure.',
   techUsed: [{ icon: DiReact }, { icon: BiLogoTailwindCss }, { icon: BiLogoRedux }],
@@ -64,8 +64,8 @@ const headerOptions = [{
 }];
 
 const technologies = {
-  title: 'Hi! Im Mauricio ✌',
-  firstParagraph: 'Web developer from Argentina 🧉 I like cats and doing cool aestetic stuff with my code. Most of the time Im challenging myself to focus and improve.',
+  title: 'Hi! I\'m Mauricio ✌',
+  firstParagraph: 'Web developer from Argentina 🧉 I like cats and doing cool aestetic stuff with my code. Most of the time I\'m challenging myself to focus and improve.',
   secondParagraph: 'Constantly studying to be the best 😃',
   skillsTitle: 'My skills 🐱‍👤',
   cvTitle: 'Get to know me a little more! 😋',

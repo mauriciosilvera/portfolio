@@ -13,26 +13,26 @@ function ProfileCard({ data }) {
   } = data;
 
   return (
-    <section className="w-1/3 rounded-2xl bg-boxes flex flex-col items-center justify-center pt-[150px] relative shadow-md shadow-boxes">
+    <section className="w-11/12 mt-[150px] md:mt-[240px] sm:w-3/5 lg:w-[40%] rounded-2xl bg-boxes flex flex-col items-center justify-center pt-[50px] md:pt-[100px] lg:pt-[150px] lg:mt-[194px] relative shadow-md shadow-boxes lg:ml-3 xl:w-1/3">
       <img
-        className="w-[300px] h-[300px] mb-4 absolute top-[-150px]"
+        className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] absolute top-[-150px] md:top-[-210px] lg:top-[-170px]"
         src="/profile-dark.webp"
         alt="yop"
       />
 
-      <h1 className="text-3xl font-bold py-3">{name}</h1>
-      <h2 className="text-xl font-semibold">{job}</h2>
+      <h1 className="text-3xl md:text-3xl font-bold py-2">{name}</h1>
+      <h2 className="text-lg md:text-xl font-semibold">{job}</h2>
 
       <div className="flex">
         <Link href={gitHub}>
-          <AiFillGithub className="text-5xl m-2" />
+          <AiFillGithub className="text-4xl md:text-5xl m-2" />
         </Link>
         <Link href={linkedIn}>
-          <AiFillLinkedin className="text-5xl m-2" />
+          <AiFillLinkedin className="text-4xl md:text-5xl m-2" />
         </Link>
       </div>
 
-      <ol className="w-4/5 flex flex-col mb-4">
+      <ol className="flex flex-col mb-4">
         <ListItem field="Email:" value={email}>
           <HiOutlineMail />
         </ListItem>

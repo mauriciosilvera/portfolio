@@ -1,18 +1,22 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import './globals.css';
 import Header from '@/components/Header';
 import ProfileCard from '@/components/ProfileCard';
 import { profileData } from '@/constants';
 
 function RootLayout({ children }) {
+  const [theme, setTheme] = useState('dark');
+
   return (
-    <html lang="en">
-      <body className="h-screen max-w-screen overflow-x-hidden flex items-center justify-center flex-col bg-violet">
-        <Header />
-        <div className="w-4/5 h-3/5 flex justify-between">
-          <ProfileCard data={profileData} />
+    <html lang="en" className="flex justify-center dark">
+      <body className="w-screen h-screen overflow-x-hidden flex items-center flex-col bg-violet lg:flex-row lg:justify-center xl:w-10/12">
+        <ProfileCard data={profileData} />
+        <section className="flex flex-col items-center justify-end lg:h-[85%] lg:w-[60%] xl:w-2/3 lg:mr-3 lg:items-end lg:justify-start">
+          <Header switchTheme={setTheme} />
           {children}
-        </div>
+        </section>
       </body>
     </html>
   );
