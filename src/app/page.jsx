@@ -23,7 +23,7 @@ function Home() {
 
       <h3 className="mt-6 text-lg md:text-xl font-normal">{technologies.cvTitle}</h3>
       <a
-        className="p-3 md:p-4 bg-turquoise rounded-xl my-4 font-semibold"
+        className="p-3 md:p-4 bg-turquoise rounded-xl my-4 font-semibold dark:hover:bg-emerald-600"
         href="/CV.pdf"
         download="CV-Mauricio-Silvera"
       >

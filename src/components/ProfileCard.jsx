@@ -13,7 +13,7 @@ function ProfileCard({ data }) {
   } = data;
 
   return (
-    <section className="w-11/12 mt-[150px] md:mt-[240px] sm:w-3/5 lg:w-[40%] rounded-2xl bg-boxes flex flex-col items-center justify-center pt-[50px] md:pt-[100px] lg:pt-[150px] lg:mt-[194px] relative shadow-md shadow-boxes lg:ml-3 xl:w-1/3">
+    <section className="w-11/12 rounded-2xl sm:w-3/5 lg:w-11/12 mt-[150px] md:mt-[240px] lg:mt-0 bg-boxes flex flex-col items-center justify-center pt-[50px] md:pt-[100px] lg:pt-[150px] relative shadow-md shadow-boxes lg:ml-3">
       <img
         className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] absolute top-[-150px] md:top-[-210px] lg:top-[-170px]"
         src="/profile-dark.webp"
