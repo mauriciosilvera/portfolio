@@ -22,25 +22,25 @@ const profileData = {
 const projects = [{
   name: 'Polls - LuzuTV',
   src: '/luzu.png',
-  description: 'Esse exercitation elit deserunt tempor dolor sint amet irure eiusmod non sint commodo irure.',
+  description: 'Polls aplication with IP validation and administrator login for CRUD. Made for famous Argentinian podcast Milloton from LuzuTV.',
   techUsed: [{ icon: DiReact }, { icon: SiStyledcomponents }, { icon: SiMui }],
 },
 {
   name: 'SSBU Iron-man tracker',
   src: '/iron-man-tracker.png',
-  description: 'Esse exercitation elit deserunt tempor dolor sint amet irure eiusmod non sint commodo irure.',
+  description: 'Iron-man is a challenge in SSBU where you win in ranked with every 86 characters in a row in the game sorted randomly. This project is for tracking iron-man runs.',
   techUsed: [{ icon: DiReact }, { icon: BiLogoTailwindCss }, { icon: BiLogoRedux }],
 },
 {
   name: 'To-do app',
   src: '/todos-ts.png',
-  description: 'Esse exercitation elit deserunt tempor dolor sint amet irure eiusmod non sint commodo irure.',
+  description: 'Todo app made with TS and pre-defined CSS.',
   techUsed: [{ icon: DiReact }, { icon: BiLogoTypescript }, { icon: BiLogoTailwindCss }],
 },
 {
   name: 'Hoobank',
   src: '/hoobank.png',
-  description: 'Esse exercitation elit deserunt tempor dolor sint amet irure eiusmod non sint commodo irure.',
+  description: 'Modern UX/UI single page digital bank landing using existent assets.',
   techUsed: [{ icon: DiReact }, { icon: BiLogoTailwindCss }],
 }];
 
@@ -133,6 +133,14 @@ const technologies = {
   ],
 };
 
+const contact = {
+  title: 'Contact me! ✉',
+  subtitle: 'If you are interested in my services or wanna share your favourite music album with me, send me a message! 😉',
+  email: 'Email',
+  name: 'Name',
+  message: 'Message',
+};
+
 export {
-  profileData, projects, headerOptions, technologies,
+  profileData, projects, headerOptions, technologies, contact,
 };

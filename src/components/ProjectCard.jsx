@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 function ProjectCard(props) {
   const {
@@ -17,7 +18,10 @@ function ProjectCard(props) {
   };
 
   return (
-    <article
+    <motion.article
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.3 }}
       className="flex flex-col items-center justify-start sm:w-10/12 list-none last:mb-4 lg:last:mb-0 lg:w-1/2 lg:h-1/2"
       onMouseOver={showOverlay}
       onFocus={showOverlay}
@@ -38,7 +42,7 @@ function ProjectCard(props) {
         )}
       </div>
 
-    </article>
+    </motion.article>
   );
 }
 
