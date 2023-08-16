@@ -9,7 +9,7 @@ function Home() {
       <div className="w-10/12 lg:w-11/12">
         <h1 className="mt-7 mb-4 font-bold text-3xl lg:text-4xl">{technologies.title}</h1>
         <p className="text-md md:text-lg">{technologies.firstParagraph}</p>
-        <p className="mb-6 mt-2 text-lg">{technologies.secondParagraph}</p>
+        <p className="text-md md:text-lg mb-6 mt-2">{technologies.secondParagraph}</p>
       </div>
       <h3 className="mb-4 text-xl md:text-2xl font-semibold">{technologies.skillsTitle}</h3>
       <ol className="w-11/12 list-none flex flex-wrap justify-center">

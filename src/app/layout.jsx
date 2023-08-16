@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import './globals.css';
 import { motion } from 'framer-motion';
@@ -18,7 +20,7 @@ function RootLayout({ children }) {
           <div className="min-h-[20%] my-5 hidden lg:block" />
           <ProfileCard data={profileData} />
         </section>
-        <section className="flex flex-col items-center justify-end lg:h-[85%] lg:w-3/5 xl:w-2/3 lg:mr-3 lg:items-end lg:justify-start">
+        <section className="w-11/12 flex flex-col items-center justify-end lg:h-[85%] lg:w-3/5 xl:w-2/3 lg:mr-3 lg:items-end lg:justify-start">
           <Header />
           {children}
         </section>
@@ -26,9 +28,5 @@ function RootLayout({ children }) {
     </html>
   );
 }
-
-export const metadata = {
-  title: 'Mauricio Silvera',
-};
 
 export default RootLayout;

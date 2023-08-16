@@ -40,7 +40,7 @@ const projects = [{
 {
   name: 'Hoobank',
   src: '/hoobank.png',
-  description: 'Modern UX/UI single page digital bank landing using existent assets.',
+  description: 'Modern UX/UI single page responsive digital bank landing using existent assets.',
   techUsed: [{ icon: DiReact }, { icon: BiLogoTailwindCss }],
 }];
 
@@ -65,7 +65,7 @@ const headerOptions = [{
 
 const technologies = {
   title: 'Hi! I\'m Mauricio ✌',
-  firstParagraph: 'Web developer from Argentina 🧉 I like cats and doing cool aestetic stuff with my code. Most of the time I\'m challenging myself to focus and improve.',
+  firstParagraph: 'Web developer from Argentina 🧉 I like cats and doing cool aesthetic stuff with my code. Most of the time I\'m challenging myself to focus and improve.',
   secondParagraph: 'Constantly studying to be the best 😃',
   skillsTitle: 'My skills 🐱‍👤',
   cvTitle: 'Get to know me a little more! 😋',
@@ -136,9 +136,14 @@ const technologies = {
 const contact = {
   title: 'Contact me! ✉',
   subtitle: 'If you are interested in my services or wanna share your favourite music album with me, send me a message! 😉',
-  email: 'Email',
-  name: 'Name',
-  message: 'Message',
+  email: 'email',
+  emailLabel: 'Email',
+  name: 'name',
+  nameLabel: 'Name',
+  message: 'message',
+  messageLabel: 'Message',
+  buttonLabel: 'Send email',
+  sendedMessage: 'Thank you for your interest! I\'ll reply as soon as I can 😃',
 };
 
 export {
