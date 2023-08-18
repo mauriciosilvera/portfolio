@@ -1,18 +1,13 @@
-'use client';
-
 import React from 'react';
 import './globals.css';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import Header from '@/components/Header';
 import ProfileCard from '@/components/ProfileCard';
 
 function RootLayout({ children }) {
   return (
     <html lang="en" className="flex justify-center dark">
-      <motion.body
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.4 }}
+      <body
         className="w-screen h-screen overflow-x-hidden flex items-center flex-col bg-violet lg:flex-row lg:justify-center xl:w-10/12"
       >
         <section className="flex flex-col items-center w-11/12 lg:w-2/5 lg:h-[85%] lg:justify-start">
@@ -23,9 +18,13 @@ function RootLayout({ children }) {
           <Header />
           {children}
         </section>
-      </motion.body>
+      </body>
     </html>
   );
 }
+
+export const metadata = {
+  title: 'Mauricio Silvera',
+};
 
 export default RootLayout;

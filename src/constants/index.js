@@ -10,6 +10,7 @@ import {
 import { TbBrandNextjs } from 'react-icons/tb';
 import { SiMui, SiFigma, SiStyledcomponents } from 'react-icons/si';
 import { BsPinMap } from 'react-icons/bs';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 const profileData = {
   name: 'Mauricio Silvera',
@@ -31,8 +32,16 @@ const profileData = {
       icon: BsPinMap,
     },
   ],
-  linkedIn: 'https://www.linkedin.com/in/mauricio-silvera/',
-  gitHub: 'https://www.github.com/mauriciosilvera',
+  socialNetwork: [
+    {
+      icon: AiFillLinkedin,
+      link: 'https://www.linkedin.com/in/mauricio-silvera',
+    },
+    {
+      icon: AiFillGithub,
+      link: 'https://www.github.com/mauriciosilvera',
+    },
+  ],
   buttonLabel: 'Download CV',
 };
 
@@ -82,8 +91,8 @@ const headerOptions = [{
 
 const technologies = {
   title: 'Hi! I\'m Mauricio ✌',
-  firstParagraph: 'Web developer from Argentina 🧉 I like cats and doing cool aesthetic stuff with my code. Most of the time I\'m challenging myself to focus and improve.',
-  secondParagraph: 'Constantly studying to be the best 😃',
+  firstParagraph: 'Web developer from Argentina 🧉 I like cats and doing cool aesthetic stuff with my code. Most of the time I\'m challenging myself to improve. In my free time I like to cook and competing.',
+  secondParagraph: 'Constantly studying to be the best and share my knowledge 😃',
   skillsTitle: 'My skills 🐱‍👤',
   cvTitle: 'Get to know me a little more! 😋',
   downloadButton: 'Download CV',

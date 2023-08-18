@@ -1,11 +1,17 @@
 'use client';
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import { technologies } from '@/constants';
 
 function Home() {
   return (
-    <section className="w-11/12 sm:w-4/5 mb-5 rounded-xl dark:bg-boxes flex flex-wrap items-center justify-center lg:justify-start flex-col shadow-md shadow-boxes order-3 lg:w-11/12 lg:mb-0">
+    <motion.section
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.4 }}
+      className="w-11/12 sm:w-4/5 mb-5 rounded-xl dark:bg-boxes flex flex-wrap items-center justify-center lg:justify-start flex-col shadow-md shadow-boxes order-3 lg:w-11/12 lg:mb-0"
+    >
       <div className="w-10/12 lg:w-11/12">
         <h1 className="mt-7 mb-4 font-bold text-3xl lg:text-4xl">{technologies.title}</h1>
         <p className="text-md md:text-lg">{technologies.firstParagraph}</p>
@@ -29,7 +35,7 @@ function Home() {
       >
         {technologies.downloadButton}
       </a>
-    </section>
+    </motion.section>
   );
 }
 
