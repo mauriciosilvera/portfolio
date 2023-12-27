@@ -22,7 +22,7 @@ import { SiMui, SiFigma, SiStyledcomponents } from "react-icons/si";
 import { BsPinMap } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
-const profileData = {
+const profileData: ProfileData = {
   name: "Mauricio Silvera",
   job: "Web developer",
   aboutMe: [
@@ -55,7 +55,7 @@ const profileData = {
   buttonLabel: "Download CV",
 };
 
-const projects = [
+const projects: Projects[] = [
   {
     name: "Polls - LuzuTV",
     src: "/luzu.png",
@@ -97,7 +97,7 @@ const projects = [
   },
 ];
 
-const headerOptions = [
+const headerOptions: Header[] = [
   {
     id: 1,
     name: "Home",
@@ -118,7 +118,7 @@ const headerOptions = [
   },
 ];
 
-const technologies = {
+const technologies: Technologies = {
   title: "Hi! I'm Mauricio ✌",
   firstParagraph:
     "Web developer from Argentina 🧉 I like cats and doing cool aesthetic stuff with my code. Most of the time I'm challenging myself to improve. In my free time I like to cook and competing.",
@@ -191,7 +191,7 @@ const technologies = {
   ],
 };
 
-const contact = {
+const contact: Contact = {
   title: "Contact me! ✉",
   subtitle:
     "If you are interested in my services or wanna share your favourite music album with me, send me a message.",
