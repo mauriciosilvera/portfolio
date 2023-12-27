@@ -3,7 +3,7 @@ import React from 'react';
 function ListItem({ field, value, children }) {
   return (
     <li className="flex items-center py-2">
-      <div className="flex h-full items-center text-xl mr-2 p-4 bg-turquoise rounded-full">
+      <div className="flex h-full items-center text-xl mr-2 p-4 bg-buttons dark:bg-darkButtons rounded-full">
         <span className="">
           {children}
         </span>

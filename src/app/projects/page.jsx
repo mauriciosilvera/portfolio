@@ -11,7 +11,7 @@ function Projects() {
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4 }}
-      className="w-11/12 mb-5 sm:w-4/5 rounded-xl bg-boxes flex flex-wrap items-center justify-center flex-col shadow-md shadow-boxes lg:w-11/12  lg:flex-row lg:mb-0"
+      className="w-11/12 mb-5 sm:w-4/5 rounded-xl bg-boxes shadow-slate-300 dark:bg-darkBoxes flex flex-wrap items-center justify-center flex-col shadow-md dark:shadow-darkBoxes lg:w-11/12  lg:flex-row lg:mb-0"
     >
       {projects.map((project) => (
         <ProjectCard

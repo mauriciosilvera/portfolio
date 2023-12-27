@@ -1,12 +1,10 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 function ProjectCard(props) {
-  const {
-    name, src, description, techIcons,
-  } = props;
+  const { name, src, description, techIcons } = props;
   const [isHovered, setIsHovered] = useState(false);
 
   const showOverlay = () => {
@@ -34,14 +32,15 @@ function ProjectCard(props) {
           <div className="absolute flex flex-col items-center justify-center rounded-xl top-0 left-0 w-full h-full bg-black/70">
             <ul className="w-4/5 flex items-center justify-center gap-3">
               {techIcons.map((tech) => (
-                <tech.icon className="text-4xl p-1 2xl:text-6xl bg-turquoise rounded-full" />
+                <tech.icon className="text-4xl p-1 2xl:text-6xl bg-buttons dark:bg-darkButtons rounded-full" />
               ))}
             </ul>
-            <p className="w-10/12 text-sm xl:text-base text-white text-center mt-3">{description}</p>
+            <p className="w-10/12 text-sm xl:text-base text-white text-center mt-3">
+              {description}
+            </p>
           </div>
         )}
       </div>
-
     </motion.article>
   );
 }
