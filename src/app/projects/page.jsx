@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { projects } from '@/constants';
-import ProjectCard from '@/components/ProjectCard';
+import React from "react";
+import { motion } from "framer-motion";
+import { projects } from "@/constants";
+import ProjectCard from "@/components/ProjectCard";
 
 function Projects() {
   return (

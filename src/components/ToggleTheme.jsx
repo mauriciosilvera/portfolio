@@ -12,7 +12,11 @@ export default function ToggleTheme() {
   };
 
   return (
-    <button type="button" onClick={changeTheme} className="p-5 ml-4 rounded-full text-2xl bg-boxes shadow-slate-300 dark:bg-darkBoxes shadow-md dark:shadow-darkBoxes fixed top-5 right-5 lg:relative lg:top-0 lg:right-0">
+    <button
+      type="button"
+      onClick={changeTheme}
+      className="p-5 ml-4 rounded-full text-2xl bg-boxes shadow-slate-300 dark:bg-darkBoxes shadow-md dark:shadow-darkBoxes fixed top-5 right-5 lg:relative lg:top-0 lg:right-0"
+    >
       {isDarkMode ? <BiSun /> : <BiMoon />}
     </button>
   );
