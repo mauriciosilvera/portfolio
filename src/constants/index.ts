@@ -10,6 +10,7 @@ import {
   DiCss3,
   DiReact,
   DiGithubBadge,
+  DiPostgresql
 } from "react-icons/di";
 import {
   BiLogoTypescript,
@@ -18,7 +19,7 @@ import {
   BiLogoRedux,
 } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiMui, SiFigma, SiStyledcomponents } from "react-icons/si";
+import { SiMui, SiStyledcomponents, SiSanity, SiMongodb, SiExpress, SiVite  } from "react-icons/si";
 import { BsPinMap } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
@@ -44,10 +45,12 @@ const profileData: ProfileData = {
   ],
   socialNetwork: [
     {
+      id: 0,
       icon: AiFillLinkedin,
       link: "https://www.linkedin.com/in/mauricio-silvera",
     },
     {
+      id: 1,
       icon: AiFillGithub,
       link: "https://www.github.com/mauriciosilvera",
     },
@@ -57,8 +60,43 @@ const profileData: ProfileData = {
 
 const projects: Projects[] = [
   {
+    name: "Acme Dashboard",
+    srcLight: "/dashboardLight.png",
+    srcDark: "/dashboardDark.png",
+    description:
+      "Dashboard with authentication, real time data and searching. Made for NextJS course using best practices.",
+    techUsed: [
+      { icon: DiReact },
+      { icon: BiLogoTypescript },
+      { icon: TbBrandNextjs },
+      { icon: DiPostgresql }
+    ],
+  },
+  {
+    name: "Sneakerhouse",
+    srcLight: "/sneakerhouseLight.png",
+    srcDark: "/sneakerhouseDark.png",
+    description:
+      "Releases calendar for Sneakerhouse, a digital communication site about sneakers, music, entertainment and everything about hype world.",
+    techUsed: [
+      { icon: DiReact },
+      { icon: BiLogoTypescript },
+      { icon: TbBrandNextjs },
+      { icon: SiSanity }
+    ],
+  },
+  {
+    name: "Hoobank",
+    srcLight: "/hoobankLight.png",
+    srcDark: "/hoobankDark.png",
+    description:
+      "Modern UX/UI single page responsive digital bank landing using existent assets.",
+    techUsed: [{ icon: DiReact }, { icon: BiLogoTailwindCss }, { icon: SiVite }],
+  },
+  {
     name: "Polls - LuzuTV",
-    src: "/luzu.png",
+    srcLight: "/luzuLight.png",
+    srcDark: "/luzuDark.png",
     description:
       "Polls aplication with IP validation and administrator login for CRUD. Made for famous Argentinian podcast Milloton from LuzuTV.",
     techUsed: [
@@ -69,7 +107,8 @@ const projects: Projects[] = [
   },
   {
     name: "SSBU Iron-man tracker",
-    src: "/iron-man-tracker.png",
+    srcLight: "/ironmanLight.png",
+    srcDark: "/ironmanDark.png",
     description:
       "Iron-man is a challenge in SSBU where you win in ranked with every 86 characters in a row in the game sorted randomly. This project is for tracking iron-man runs.",
     techUsed: [
@@ -80,21 +119,15 @@ const projects: Projects[] = [
   },
   {
     name: "To-do app",
-    src: "/todos-ts.png",
+    srcLight: "/todosLight.png",
+    srcDark: "/todosDark.png",
     description: "Todo app made with TS and pre-defined CSS.",
     techUsed: [
       { icon: DiReact },
       { icon: BiLogoTypescript },
       { icon: BiLogoTailwindCss },
     ],
-  },
-  {
-    name: "Hoobank",
-    src: "/hoobank.png",
-    description:
-      "Modern UX/UI single page responsive digital bank landing using existent assets.",
-    techUsed: [{ icon: DiReact }, { icon: BiLogoTailwindCss }],
-  },
+  }
 ];
 
 const headerOptions: Header[] = [
@@ -119,9 +152,9 @@ const headerOptions: Header[] = [
 ];
 
 const technologies: Technologies = {
-  title: "Hi! I'm Mauricio ✌",
+  title: "Hi! I'm Mauricio 👋🏼",
   firstParagraph:
-    "Web developer from Argentina 🧉 I like cats and doing cool aesthetic stuff with my code. Most of the time I'm challenging myself to improve. In my free time I like to cook and competing.",
+    "Web developer from Argentina 🧉 I love cats and doing cool aesthetic stuff with my code. I really really like tryhard things. In my free time I like to cook and competing.",
   secondParagraph:
     "Constantly studying to be the best and share my knowledge 😃",
   skillsTitle: "My skills 🐱‍👤",
@@ -155,38 +188,38 @@ const technologies: Technologies = {
     },
     {
       id: 6,
-      name: "Tailwind",
-      icon: BiLogoTailwindCss,
-    },
-    {
-      id: 7,
-      name: "MaterialUI",
-      icon: SiMui,
-    },
-    {
-      id: 8,
       name: "Typescript",
       icon: BiLogoTypescript,
     },
     {
+      id: 7,
+      name: "Tailwind",
+      icon: BiLogoTailwindCss,
+    },
+    {
+      id: 8,
+      name: "NodeJS",
+      icon: BiLogoNodejs,
+    },
+    {
       id: 9,
+      name: "Express",
+      icon: SiExpress,
+    },
+    {
+      id: 10,
+      name: "MongoDB",
+      icon: SiMongodb,
+    },
+    {
+      id: 11,
       name: "Redux",
       icon: BiLogoRedux,
     },
     {
-      id: 10,
-      name: "GitHub",
-      icon: DiGithubBadge,
-    },
-    {
-      id: 11,
-      name: "Figma",
-      icon: SiFigma,
-    },
-    {
       id: 12,
-      name: "NodeJS",
-      icon: BiLogoNodejs,
+      name: "Git",
+      icon: DiGithubBadge,
     },
   ],
 };
@@ -202,7 +235,7 @@ const contact: Contact = {
   message: "message",
   messageLabel: "Message",
   buttonLabel: "Send email",
-  sendedMessage: "Thank you for your interest! I'll reply as soon as I can 😃",
+  sendedMessage: "Thank you for your contact! I'll reply as soon as I can 😃",
 };
 
 export { profileData, projects, headerOptions, technologies, contact };

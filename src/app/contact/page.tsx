@@ -48,11 +48,8 @@ function Contact() {
         </h1>
         <p className="text-md md:text-lg mt-4 mb-16">{contact.subtitle}</p>
       </div>
-      <motion.form
+      <form
         ref={form}
-        initial={{ opacity: 0, x: -200 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
         className="w-10/12 flex flex-col gap-8 justify-center lg:w-3/4 xl:w-3/5"
         onSubmit={sendEmail}
       >
@@ -69,7 +66,7 @@ function Contact() {
         >
           {contact.buttonLabel}
         </button>
-      </motion.form>
+      </form>
     </motion.section>
   );
 }

@@ -2,7 +2,7 @@
 
 import React, { useEffect, createContext, useState } from "react";
 
-export const ThemeContext = createContext();
+export const ThemeContext = createContext(undefined);
 
 export default function ThemeProvider({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(true);

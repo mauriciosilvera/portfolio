@@ -7,6 +7,7 @@ interface ProfileData {
         icon: IconType;
     }[];
     socialNetwork: {
+        id: number;
         icon: IconType;
         link: string;
     }[];
@@ -15,7 +16,8 @@ interface ProfileData {
 
 interface Projects {
     name: string;
-    src: string;
+    srcLight: string;
+    srcDark: string;
     description: string;
     techUsed: {
         icon: IconType;

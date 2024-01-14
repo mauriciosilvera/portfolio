@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import ProfileCard from "@/components/ProfileCard";
 import ThemeProvider from "./theme-provider";
+import { Metadata } from "next";
 
 function RootLayout({ children }) {
   return (
@@ -23,8 +24,13 @@ function RootLayout({ children }) {
   );
 }
 
-export const metadata = {
-  title: "Mauricio Silvera",
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Mauricio Silvera',
+    default: 'Mauricio Silvera',
+  },
+  description: 'My personal portfolio, built with NextJS App Router.',
+  metadataBase: new URL('https://mauriciosilvera-dev.vercel.app'),
 };
 
 export default RootLayout;
