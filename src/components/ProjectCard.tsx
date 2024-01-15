@@ -29,7 +29,7 @@ function ProjectCard(props: Props) {
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.3 }}
-      className="flex flex-col items-center justify-start sm:w-10/12 list-none lg:last:mb-0 lg:w-1/2 lg:mb-4"
+      className="flex flex-col items-center justify-start sm:w-10/12 list-none lg:w-1/2 lg:mb-4"
     >
       <p className="text-xl lg:text-2xl font-semibold mt-4">{name}</p>
       <div
