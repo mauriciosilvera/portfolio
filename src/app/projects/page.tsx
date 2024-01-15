@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { motion } from "framer-motion";
 import { projects } from "@/constants";
 import ProjectCard from "@/components/ProjectCard";
@@ -18,6 +18,7 @@ function Projects() {
     >
       {projects.map((project) => (
         <ProjectCard
+          key={project.id}
           name={project.name}
           src={isDarkMode ? project.srcDark : project.srcLight}
           description={project.description}

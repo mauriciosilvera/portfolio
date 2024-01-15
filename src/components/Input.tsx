@@ -1,12 +1,15 @@
-import React from "react";
+interface Props {
+  label: string;
+  type: string;
+  name: string;
+}
 
-function Input({ label, type, name }) {
+function Input({ label, type, name }: Props) {
   return (
     <div className="relative z-0">
       {type === "textArea" ? (
         <textarea
           required
-          type={type}
           id={name}
           name={name}
           className="block py-2 w-full bg-transparent border-0 border-b-2 border-gray-800 dark:text-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-buttons peer dark:focus:border-darkButtons resize-none"

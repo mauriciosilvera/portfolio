@@ -2,6 +2,7 @@ interface ProfileData {
     name: string;
     job: string;
     aboutMe: {
+        id: number;
         key: string;
         value: string;
         icon: IconType;
@@ -15,11 +16,13 @@ interface ProfileData {
 }
 
 interface Projects {
+    id: number;
     name: string;
     srcLight: string;
     srcDark: string;
     description: string;
     techUsed: {
+        id: number;
         icon: IconType;
     }[];
 }

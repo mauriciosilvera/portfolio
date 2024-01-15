@@ -1,11 +1,15 @@
-import React from "react";
 import "./globals.css";
 import Header from "@/components/Header";
 import ProfileCard from "@/components/ProfileCard";
 import ThemeProvider from "./theme-provider";
 import { Metadata } from "next";
+import { ReactNode } from "react";
 
-function RootLayout({ children }) {
+interface Props {
+  children: ReactNode;
+}
+
+function RootLayout({ children }: Props) {
   return (
     <ThemeProvider>
       <html lang="en" className="flex justify-center">
@@ -26,11 +30,11 @@ function RootLayout({ children }) {
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Mauricio Silvera',
-    default: 'Mauricio Silvera',
+    template: "%s | Mauricio Silvera",
+    default: "Mauricio Silvera",
   },
-  description: 'My personal portfolio, built with NextJS App Router.',
-  metadataBase: new URL('https://mauriciosilvera-dev.vercel.app'),
+  description: "My personal portfolio, built with NextJS App Router.",
+  metadataBase: new URL("https://mauriciosilvera-dev.vercel.app"),
 };
 
 export default RootLayout;

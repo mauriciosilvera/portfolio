@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { BiSun, BiMoon } from "react-icons/bi";
 import { ThemeContext } from "@/app/theme-provider";
 

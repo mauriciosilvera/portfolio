@@ -1,10 +1,14 @@
 "use client";
 
-import React, { useEffect, createContext, useState } from "react";
+import { useEffect, createContext, useState, ReactNode } from "react";
 
 export const ThemeContext = createContext(undefined);
 
-export default function ThemeProvider({ children }) {
+interface Props {
+  children: ReactNode;
+}
+
+export default function ThemeProvider({ children }: Props) {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   // Custom setDarkMode para agregar la clase al elemento <html>

@@ -1,13 +1,10 @@
-import { Metadata } from 'next';
+import React from "react";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Contact',
-  };
- 
+  title: "Contact",
+};
+
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      {children}
-    </>
-  );
+  return <>{children}</>;
 }
